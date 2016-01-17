@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!lib/**",
+        "!node_modules/**"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "files": [
+        "src/core/di.d.ts",
+        "src/core/di.ts",
+        "src/core/di/decorators.d.ts",
+        "src/core/di/exceptions.d.ts",
+        "src/core/di/forward_ref.d.ts",
+        "src/core/di/injector.d.ts",
+        "src/core/di/key.d.ts",
+        "src/core/di/metadata.d.ts",
+        "src/core/di/opaque_token.d.ts",
+        "src/core/di/provider.d.ts",
+        "src/core/di/type_info.d.ts",
+        "src/core/di/type_literal.d.ts",
+        "typings/tsd.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
