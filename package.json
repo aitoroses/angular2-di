@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/di.min.js",
-  "typings": "./lib/di.d.ts",
+  "typescript": {
+    "definition": "lib/di.d.ts"
+  },
   "scripts": {
     "bundle": "node_modules/.bin/webpack src/index.ts",
     "build": "npm run bundle -- lib/di.js",
