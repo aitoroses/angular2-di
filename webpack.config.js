@@ -28,6 +28,11 @@ if (process.env.COMPRESS) {
 
 module.exports = {
 
+  output: {
+    library: "Angular2DI",
+    libraryTarget: "umd"
+  },
+
   externals: {},
 
   module: {
