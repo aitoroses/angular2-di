@@ -1,8 +1,3 @@
-/**
- * @module
- * @description
- * The `di` module provides dependency injection container services.
- */
 export { InjectMetadata, OptionalMetadata, InjectableMetadata, SelfMetadata, HostMetadata, SkipSelfMetadata, DependencyMetadata } from './di/metadata';
 export * from './di/decorators';
 export { forwardRef, resolveForwardRef, ForwardRefFn } from './di/forward_ref';

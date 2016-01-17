@@ -1,10 +1,11 @@
 {
-  "name": "angular2-extract-di",
+  "name": "angular2-di",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/di.min.js",
+  "typings": "./lib/di.d.ts",
   "scripts": {
-    "bundle": "node_modules/.bin/webpack src/index.js --output-library --output-library-target umd",
+    "bundle": "node_modules/.bin/webpack src/index.js --output-library Angular2DI --output-library-target umd",
     "build": "npm run bundle -- lib/di.js",
     "build:min": "COMPRESS=true npm run bundle -- lib/di.min.js",
     "build:all": "npm run build && npm run build:min",

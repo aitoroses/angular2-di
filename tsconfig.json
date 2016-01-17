@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
         "target": "es6",
+        "out": ".tmp/di.ts",
+        "outDir": ".tmp",
         "moduleResolution": "node",
         "isolatedModules": false,
         "jsx": "react",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "declaration": false,
+        "declaration": true,
         "noImplicitAny": false,
         "removeComments": true,
         "noLib": false,
@@ -34,6 +36,12 @@
         "src/core/di/provider.d.ts",
         "src/core/di/type_info.d.ts",
         "src/core/di/type_literal.d.ts",
+        "src/core/util/decorators.d.ts",
+        "src/core/util/decorators.ts",
+        "src/index.d.ts",
+        "src/index.ts",
+        "src/util/decorators.d.ts",
+        "src/util/decorators.ts",
         "typings/tsd.d.ts"
     ],
     "atom": {
