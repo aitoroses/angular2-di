@@ -1,7 +1,7 @@
 {
   "name": "angular2-di",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0-beta.1",
+  "description": "Angular2 Dependency Injection (di.js) framework externalized to be used standalone in 14Kb.",
   "main": "lib/di.min.js",
   "typescript": {
     "definition": "lib/di.d.ts"
