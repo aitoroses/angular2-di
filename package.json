@@ -1,6 +1,6 @@
 {
   "name": "angular2-di",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.1-1",
   "description": "Angular2 Dependency Injection (di.js) framework externalized to be used standalone in 14Kb.",
   "main": "lib/di.min.js",
   "repository": "https://www.github.com/aitoroses/angular2-di",
