@@ -1,0 +1,12 @@
+{
+  "name": "typescript-library-boilerplate",
+  "dependencies": {},
+  "globalDevDependencies": {
+    "assert": "registry:dt/assert#0.0.0+20160317120654",
+    "mocha": "registry:env/mocha#2.2.5+20160321223601",
+    "underscore": "registry:dt/underscore#1.7.0+20160622050840"
+  },
+  "globalDependencies": {
+    "reflect-metadata": "registry:dt/reflect-metadata#0.0.0+20160630155503"
+  }
+}

@@ -1,1 +1,1 @@
-export * from './core/di'
+export * from '@angular/core/src/di'

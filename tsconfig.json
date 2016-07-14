@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "out": ".tmp/di.ts",
-        "outDir": ".tmp",
+        "module": "commonjs",
         "moduleResolution": "node",
         "isolatedModules": false,
         "jsx": "react",
@@ -10,38 +9,20 @@
         "emitDecoratorMetadata": true,
         "declaration": true,
         "noImplicitAny": false,
+        "noImplicitUseStrict": false,
         "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "lib"
     },
-    "filesGlob": [
-        "**/*.ts",
-        "**/*.tsx",
-        "!lib/**",
-        "!bower_components/**",
-        "!node_modules/**"
+    "exclude": [
+        "_old",
+        "node_modules"
     ],
-    "compileOnSave": false,
+    "compileOnSave": true,
     "buildOnSave": false,
-    "files": [
-        "src/core/di.ts",
-        "src/core/di/decorators.ts",
-        "src/core/di/exceptions.ts",
-        "src/core/di/forward_ref.ts",
-        "src/core/di/injector.ts",
-        "src/core/di/key.ts",
-        "src/core/di/metadata.ts",
-        "src/core/di/opaque_token.ts",
-        "src/core/di/provider.ts",
-        "src/core/di/type_info.ts",
-        "src/core/di/type_literal.ts",
-        "src/core/util/decorators.ts",
-        "src/index.ts",
-        "src/util/decorators.ts",
-        "typings/tsd.d.ts"
-    ],
     "atom": {
-        "rewriteTsconfig": true
+        "rewriteTsconfig": false
     }
 }

@@ -1,61 +1,24 @@
-'use strict'
 
-/**
- * Accepts as environment variables the following
- * @env NODE_ENV - Defines the node_env variable
- * @env COMPRESS - Uses minification
- * @env DEBUG - Enables debug mode on the application
- */
+var webpack = require('webpack');
+var path = require('path');
+var buildPath = path.resolve('dist');
+var mainPath = path.resolve('lib', 'src', 'index.js')
 
-let webpack = require('webpack')
-let path = require('path')
+var config = {
+	devtool: 'source-map',
+	entry: mainPath,
+	output: {
+		path: buildPath,
+		filename: 'bundle.js',
+		libraryTarget: 'umd'
+	},
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin({
+			compress: {
+				warnings: false
+			}
+		})
+	]
+};
 
-let plugins = [
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-  })
-]
-
-if (process.env.COMPRESS) {
-  plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
-      }
-    })
-  )
-}
-
-module.exports = {
-
-  output: {
-    library: "Angular2DI",
-    libraryTarget: "umd"
-  },
-
-  externals: {},
-
-  module: {
-    loaders: [
-      { test: /\.ts(x?)$/, loaders: ['babel', 'ts-loader'], exclude: /node_modules/ },
-      { test: /\.js(x?)$/, loaders: ['babel'], exclude: /node_modules/ },
-    ]
-  },
-
-  resolve: {
-    root: [path.resolve('node_modules'), path.resolve('src')],
-    extensions: [
-      '', '.js', '.jsx',
-      '.ts', '.tsx',
-    ],
-    alias: {}
-  },
-
-  plugins: plugins,
-
-  devtool: process.env.COMPRESS ? null : 'inline-source-map',
-
-  ts: {
-    compiler: 'typescript'
-  }
-}
+module.exports = config;
