@@ -1,7 +1,6 @@
-# Typescript Library Boilerplate
+Documentation in progress
 
-This is a suitable starting point for writing a javascript library using Typescript and the lastest tools available in the community.
-
-Feel free to check the predefined NPM scripts and start writing some code.
-
-Aitor <3
+In the meanwhile this could help:
+ - [Dependency Injection in Angular 2](http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html)
+ - [Dependency Injection in Angular 1 and Angular 2](http://victorsavkin.com/post/126514197956/dependency-injection-in-angular-1-and-angular-2)
+ - [Usage with babel](https://github.com/shuhei/babel-plugin-angular2-annotations)
